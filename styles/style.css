@@ -28,6 +28,7 @@
 
 .header__links-list-item {
 	border-bottom: 1px solid black;
+	padding-bottom: 2px;
 	text-decoration: none;
 }
 
@@ -49,4 +50,9 @@
 	display: block;
 	text-align: left;
 	max-width: 240px;
+}
+
+.address p a {
+	text-decoration: none;
+	border-bottom: 1px solid black;
 }
