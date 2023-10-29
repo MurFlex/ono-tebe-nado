@@ -52,10 +52,7 @@
 	font-size: 18px;
 	line-height: 24.3px;
 	justify-content: center;
-}
-
-.header__address {
-	align-items: left;
+	max-width: 240px;
 }
 
 .address__link {
@@ -91,7 +88,7 @@
 
 .aligned-text {
 	display: block;
-	font-family: Raleway, serif;
+	font-family: Raleway, sans-serif;
 	font-size: 100px;
 	font-weight: 700;
 	line-height: 115%;
@@ -139,10 +136,13 @@
 .bet-button {
 	color: #fff;
 	padding: 12px 32px;
+	font-family: Raleway, sans-serif;
+	font-weight: 400;
 	font-size: 22px;
 	text-transform: uppercase;
 	border: 1px solid #fff;
 	background: none;
+	cursor: pointer;
 }
 
 .lots {
@@ -151,7 +151,7 @@
 
 .lots__heading {
 	text-transform: uppercase;
-	font-family: Raleway, serif;
+	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 40px;
 	margin-left: 40px;
@@ -171,40 +171,43 @@
 }
 
 .card {
+	height: 1px;
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	padding: 50px 40px;
 	line-height: 120%;
-	height: 450px;
+	min-height: 450px;
 	width: 430px;
 	color: white;
 }
 
 .card_type_film {
-	background: url('../images/card-lot-01.jpg'), lightgray 50% / cover no-repeat;
+	background: url('../images/card-lot-01.jpg');
 	background-size: cover;
 }
 
 .card_type_book {
-	background: url('../images/card-lot-02.jpg'), lightgray 50% / cover no-repeat;
+	background: url('../images/card-lot-02.jpg');
 	background-size: cover;
 }
 
 .card_type_picture {
-	background: url('../images/card-lot-03.jpg'), lightgray 50% / cover no-repeat;
+	background: url('../images/card-lot-03.jpg');
 	background-size: cover;
 }
 
 .card__content {
+	height: 100%;
 	position: relative;
 	z-index: 2;
 	display: flex;
-	height: 100%;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .card__title {
-	font-family: Raleway, serif;
+	font-family: Raleway, sans-serif;
 	line-height: 120%;
 	font-weight: 700;
 	font-size: 22px;
@@ -220,13 +223,14 @@
 .lots__look-more-link {
 	font-size: 20px;
 	margin-left: 40px;
+	text-decoration: none;
 	border-bottom: 1px solid black;
 }
 
 .about {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr auto;
 	align-items: center;
 	column-gap: 25px;
 	padding: 180px 50px 176px 50px;
@@ -248,7 +252,7 @@
 }
 
 .about__title {
-	font-family: Raleway, serif;
+	font-family: Raleway, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -291,12 +295,11 @@
 .footer__social-list {
 	display: flex;
 	gap: 46px;
-	width: 240px;
-	height: 48px;
+	min-height: 48px;
 	list-style-type: none;
 }
 
 .footer__social-icon {
-	width: 49.33px;
-	height: 49.33px;
+	width: 49px;
+	height: 49px;
 }
