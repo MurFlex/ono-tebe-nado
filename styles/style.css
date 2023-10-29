@@ -67,7 +67,7 @@
 	background: url('../images/cover.jpg'), lightgray 50% / cover no-repeat;
 	background-size: cover;
 	background-position: 0 -17px;
-	padding: 165px 50px 50px 50px;
+	padding: 165px 50px 51px 50px;
 }
 
 .overlay {
@@ -228,7 +228,7 @@
 	grid-template-rows: 1fr 1fr;
 	align-items: center;
 	column-gap: 25px;
-	padding: 180px 50px 177px 50px;
+	padding: 180px 50px 176px 50px;
 }
 
 .about__logo {
