@@ -20,6 +20,7 @@
 	list-style-type: circle;
 	gap: 32px;
 	text-wrap: nowrap;
+	white-space: nowrap; /* Фикс для фаерфокса */
 	text-transform: lowercase;
 }
 
@@ -296,4 +297,9 @@
 	width: 240px;
 	height: 48px;
 	list-style-type: none;
+}
+
+.footer__social-icon {
+	width: 49.33px;
+	height: 49.33px;
 }
